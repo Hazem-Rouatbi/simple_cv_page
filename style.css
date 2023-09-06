@@ -9,7 +9,7 @@ body{
     --date-col : #6db0c7;
   }
   .dark-theme {
-    --primary-color: #1a1a1a;
+    --primary-color: #111111;
     --secondary-color: #bebebe;
     --flower-color: rgba(189, 183, 107, 0.350);
     --date-col : lightblue
