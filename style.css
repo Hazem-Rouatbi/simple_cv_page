@@ -4,21 +4,23 @@ body{
 }
 :root {
     --primary-color: #f0ffff;
-    --secondary-color: #111111;
-    --flower-color: #2f2e1e;
-
+    --secondary-color: #333333;
+    --flower-color: rgba(47, 46, 30, 0.350);
+    --date-col : #6db0c7;
   }
   .dark-theme {
     --primary-color: #292929;
-    --secondary-color: #b8b69b2a;
-    --flower-color: #bdb76b;
+    --secondary-color: #bebebe;
+    --flower-color: rgba(189, 183, 107, 0.350);
+    --date-col : lightblue
+
 
   }
 .big-div {
   margin: 0;
   padding: 0;
   position: relative;
-  height: 100vh;
+  height: 100%;
   background-color: var(--primary-color);
   z-index: 0;
 }
@@ -26,7 +28,7 @@ body{
   padding: 0;
   height: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column ;
 }
 .navigation {
   display: flex;
@@ -36,13 +38,37 @@ body{
   height: fit-content;
   background: none;
 }
+
 .boxes-container{
   display: flex;
   flex-direction: column;
+  color: var(--secondary-color);
+
+}
+.date{
+color: var(--date-col);
 }
 .name-col{
+  margin-bottom: 1vh;
   align-self:flex-end ;
-  border: 20px;
+  border: solid var(--flower-color);
+  border-width: 3px;
+  padding: 0px 20px ;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.info-container{
+  font-weight: 600;
+  margin: 0 30px;
+}
+.L-text{
+  font-weight: 800;
+}
+.text-cont{
+  margin: 20px 0 ;
+  border: solid var(--flower-color);
+  border-radius: 10px;
+  padding: 5px 20px ;
 }
 
 
@@ -79,7 +105,11 @@ svg {
 }
 
 @media all and (max-width: 800px) {
-  .navigation{
+  :root{
+    --flower-color: rgba(47, 46, 30, 0.10);
+  }
+  .dark-theme{
+    --flower-color: #bdb76b11
   }
 }
 
