@@ -24,6 +24,13 @@ body{
   background-color: var(--primary-color);
   z-index: 0;
 }
+a{
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+a:hover{
+  font-weight: 500;
+}
 .container {
   padding: 0;
   height: 100%;
@@ -48,7 +55,11 @@ body{
 .date{
 color: var(--date-col);
 }
+.center-align{
+  text-align: center;
+}
 .name-col{
+  min-width: 350px;
   margin-bottom: 1vh;
   align-self:flex-end ;
   border: solid var(--flower-color);

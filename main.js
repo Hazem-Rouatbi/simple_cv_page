@@ -122,31 +122,7 @@ function updateOpacity(idx, randHeight, randWidth) {
   );
   let value = Math.floor(distanceX + distanceY);
 
-  //console.log(`width : ${randWidth} height : ${randHeight} \nmouseX : ${mouseX} mouseY : ${mouseY}`);
-  //---THIS ONE FOR COLOR CHANGE---
-  /*if(value<600){
-  for (let child of self.children) {
-    g = child.children[1];
-    path = g.children[0];
-    valueHex = (Math.abs(value)).toString(16)
-   path.style.fill = `#${valueHex}`;
-   console.log(valueHex)
-  }
-}*/
-  //---THIS ONE FOR MOVEMENT needs work
-  /*
-  if (value < 200) {
-    if (x < 200) {
-      offsetX = randHeight - (x);
-      console.log("x : ",x);
-      self.style.top = `${offsetX}px`;
-    }
-    if (y < 200) {
-      offsetY = randWidth - (y)
-      console.log("y : ",y);
-      self.style.left = `${offsetY}px`;
-    }
-  }*/
+ 
   if (value < distanceBeforeChange) {
     self.style.opacity = `${value / 6}%`;
   } else {
